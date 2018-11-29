@@ -196,8 +196,8 @@
     </div>
 </div>
 
-<!---搜索-->
 <script type="text/javascript">
+    /*搜索按钮关联百度*/
     function search(){
         if(document.getElementById("search_input").value != ""){
             window.location.href = "https://www.baidu.com/s?word=" + document.getElementById("search_input").value;
@@ -205,10 +205,7 @@
         }
         return false;
     }
-</script>
-
-<!--主页鼠标悬停右键失效-->
-<script language="Javascript">
+    /*主页鼠标悬停右键失效*/
     document.oncontextmenu=new Function("event.returnValue=false");
     document.onselectstart=new Function("event.returnValue=false");
 </script>
